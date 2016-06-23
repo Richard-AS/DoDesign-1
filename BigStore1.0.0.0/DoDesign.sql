@@ -1,7 +1,7 @@
 --base de datos DoDesign
 use master
 go
-if OBJECT_ID('DoDesign') is not null
+if DB_ID('DoDesign') is not null
 drop database DoDesign
 go
 create database DoDesign
