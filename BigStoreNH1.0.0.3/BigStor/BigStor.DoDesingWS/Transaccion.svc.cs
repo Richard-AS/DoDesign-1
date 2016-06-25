@@ -147,133 +147,133 @@ namespace BigStore.DoDesignWS
 
         public Cliente CrearCliente(Cliente cliente)
         {
-            throw new NotImplementedException();
+            return ObjCliente.Crear(cliente);
         }
 
         public IList<Cliente> ListarCliente()
         {
-            throw new NotImplementedException();
+            return ObjCliente.ListarTodos();
         }
 
         public Cliente ModificarPedido(Cliente cliente)
         {
-            throw new NotImplementedException();
+            return ObjCliente.Modificar(cliente);
         }
 
         public Cliente ObtenerCliente(int IdCliente)
         {
-            throw new NotImplementedException();
+            return ObjCliente.Obtener(IdCliente);
         }
         #endregion
 
         #region . COLOR .
         public Color CrearColor(Color color)
         {
-            throw new NotImplementedException();
+            return ObjColor.Crear(color);
         }
 
         public IList<Color> ListarColor()
         {
-            throw new NotImplementedException();
+            return ObjColor.ListarTodos();
         }
 
         public Color ModificarColor(Color color)
         {
-            throw new NotImplementedException();
+            return ObjColor.Modificar(color);
         }
 
         public Color ObtenerColor(int IdColor)
         {
-            throw new NotImplementedException();
+            return ObjColor.Obtener(IdColor);
         }
         #endregion 
 
         #region . DESIGN . 
         public Design CrearDesign(Design design)
         {
-            throw new NotImplementedException();
+            return ObjDesign.Crear(design);
         }
 
         public IList<Design> ListarDesign()
         {
-            throw new NotImplementedException();
+            return ObjDesign.ListarTodos();
         }
 
         public Design ModificarDesign(Design design)
         {
-            throw new NotImplementedException();
+            return ObjDesign.Modificar(design);
         }
 
         public Design ObtenerDesign(int IdDesign)
         {
-            throw new NotImplementedException();
+            return ObjDesign.Obtener(IdDesign);
         }
         #endregion 
 
         #region . DETALLEPEDIDO . 
         public DetallePedido CrearDetallePedido(DetallePedido detallePedido)
         {
-            throw new NotImplementedException();
+            return ObjDetallePedido.Crear(detallePedido);
         }
 
         public IList<DetallePedido> ListarDetallePedido()
         {
-            throw new NotImplementedException();
+            return ObjDetallePedido.ListarTodos();
         }
 
         public DetallePedido ModificarDetallePedido(DetallePedido detallePedido)
         {
-            throw new NotImplementedException();
+            return ObjDetallePedido.Modificar(detallePedido);
         }
 
-        public Pedido ObtenerDetallePedido(int IdDetallePedido)
+        public DetallePedido ObtenerDetallePedido(int IdDetallePedido)
         {
-            throw new NotImplementedException();
+            return ObjDetallePedido.Obtener(IdDetallePedido);
         }
         #endregion 
 
         #region . PAGO .
 
-        public Pedido CrearPago(Pago pago)
+        public Pago CrearPago(Pago pago)
         {
-            throw new NotImplementedException();
+            return ObjPago.Crear(pago);
         }
 
-        public IList<Pedido> ListarPago()
+        public IList<Pago> ListarPago()
         {
-            throw new NotImplementedException();
+            return ObjPago.ListarTodos();
         }
 
-        public Pedido ModificarPago(Pago pago)
+        public Pago ModificarPago(Pago pago)
         {
-            throw new NotImplementedException();
+            return ObjPago.Modificar(pago);
         }
 
-        public Pedido ObtenerPago(int IdPago)
+        public Pago ObtenerPago(int IdPago)
         {
-            throw new NotImplementedException();
+            return ObjPago.Obtener(IdPago);
         }
         #endregion
 
         #region . POLO . 
-        public Pedido CrearPolo(Polo polo)
+        public Polo CrearPolo(Polo polo)
         {
-            throw new NotImplementedException();
+            return ObjPolo.crear(polo);
         }
 
-        public IList<Pedido> ListarPolo()
+        public IList<Polo> ListarPolo()
         {
-            throw new NotImplementedException();
+            return ObjPolo.ListarTodos();
         }
 
-        public Pedido ModificarDesign(Polo polo)
+        public Polo ModificarDesign(Polo polo)
         {
-            throw new NotImplementedException();
+            return ObjPolo.Modificar(polo);
         }
 
-        public Pedido ObtenerPolo(int IdPolo)
+        public Polo ObtenerPolo(int IdPolo)
         {
-            throw new NotImplementedException();
+            return ObjPolo.Obtener(IdPolo);
         }
         #endregion
 
@@ -286,17 +286,17 @@ namespace BigStore.DoDesignWS
 
         public IList<TLogin> ListarTLogin()
         {
-            throw new NotImplementedException();
+            return ObjTLogin.ListarTodos();
         }
 
         public TLogin ModificarTlogin(TLogin tlogin)
         {
-            throw new NotImplementedException();
+            return ObjTLogin.Modificar(tlogin);
         }
 
         public TLogin ObtenerTLogin(int IdTLogin)
         {
-            throw new NotImplementedException();
+            return ObjTLogin.Obtener(IdTLogin);
         }
         #endregion
     }
