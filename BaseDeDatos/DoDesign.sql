@@ -1,7 +1,7 @@
 --base de datos DoDesign
 use master
 go
-if db_ID('DoDesign') is not null
+if DB_ID('DoDesign') is not null
 drop database DoDesign
 go
 create database DoDesign
@@ -34,8 +34,7 @@ create table Design
 (
 IdDesign int identity primary key not null,
 Nombre varchar(50) not null,
-Descripcion nvarchar(2000),
-Usuario varchar(50) not null,
+Descripcion nvarchar(2000)
 );
 
 -----------------------------------
@@ -53,7 +52,7 @@ create table Pedido
 IdPedido int identity primary key,
 IdPolo int  not null,
 IdPago int not null,
-NombreUsuario varchar(50) not null,
+IdCliente varchar(50) not null,
 NroTarjeta char(10) null
 );
 ------------------------------------------
@@ -77,14 +76,7 @@ IdPago int identity primary key,
 Tipo varchar(20) not null
 );
 ---------------------------------------------
-if OBJECT_ID('Users') is not null
-drop table Users
-go
-create table Users
-(
-Usuario varchar(50) primary key not null,
-Contrasena varchar(50) not null
-);
+
 -----------------------------------
 if OBJECT_ID('Color') is not null
 drop table Color
@@ -102,7 +94,8 @@ drop table TLogin
 go
 create table TLogin
 (
-NombreUsuario varchar(50) primary key,
+IdTLogin int identity primary key not null,
+NombreUsuario varchar(50) not null,
 Email varchar(50),
 Contrasenia varchar(50)
 );
@@ -112,7 +105,8 @@ drop table Cliente
 go
 create table Cliente
 (
-NombreUsuario varchar(50) primary key,
+IdCliente int identity primary key not null,
+NombreUsuario varchar(50) not null,
 Nombre varchar(50) not null,
 Apellido varchar(50) not null,
 Telefono varchar(9) not null,
@@ -122,15 +116,3 @@ DNI char(8) not null,
 NroTarjeta char(10) null,
 );
 ----------------------------------
-if OBJECT_ID('TRegistro') is not null
-drop table TRegistro
-go
-create table TRegistro
-(
-NombreUsuario varchar(50) primary key,
-Email varchar(50),
-Contrasenia varchar(50)
-);
-select * from dbo.Design
-select * from dbo.Polo
-select * from dbo.Users
