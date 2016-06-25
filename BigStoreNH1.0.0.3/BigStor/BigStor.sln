@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigStore.DoDesignWS", "BigStor.DoDesingWS\BigStore.DoDesignWS.csproj", "{BC9F9DA7-134F-4C1C-9920-DB5E34FFA65D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestDoDesign", "UnitTestDoDesign\UnitTestDoDesign.csproj", "{61A4FD02-7ED8-4C5E-BC8F-5D5A64B3E850}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC9F9DA7-134F-4C1C-9920-DB5E34FFA65D} = {BC9F9DA7-134F-4C1C-9920-DB5E34FFA65D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC9F9DA7-134F-4C1C-9920-DB5E34FFA65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9F9DA7-134F-4C1C-9920-DB5E34FFA65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9F9DA7-134F-4C1C-9920-DB5E34FFA65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9F9DA7-134F-4C1C-9920-DB5E34FFA65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A4FD02-7ED8-4C5E-BC8F-5D5A64B3E850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A4FD02-7ED8-4C5E-BC8F-5D5A64B3E850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A4FD02-7ED8-4C5E-BC8F-5D5A64B3E850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A4FD02-7ED8-4C5E-BC8F-5D5A64B3E850}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

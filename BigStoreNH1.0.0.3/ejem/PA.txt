@@ -1,0 +1,119 @@
+CREATE PROCEDURE LOGEO(
+@AliasUsuario varchar(25),
+@Contraseña varchar(25),
+@logeado int output,
+@mensaje varchar(40) output
+)
+as 
+begin 
+select @logeado=COUNT(u.Alias_Usuario) from RECURSOSHUMANOS.USUARIO  u
+where Alias_Usuario=@AliasUsuario and Contraseña_Usuario=@Contraseña
+
+if(@logeado>0) begin
+Select @mensaje='Bienvenido '+u.Alias_Usuario from RECURSOSHUMANOS.USUARIO u
+where Alias_Usuario=@AliasUsuario and Contraseña_Usuario=@Contraseña
+end
+end
+go
+pero en el codigo de c#
+
+ public string IniciarSesion(string AliasUsuario,string Contraseña)
+        {
+            int logeado = 0;
+            string mensaje = "";
+            string sql;
+            sql = "dbo.LOGEO";
+            cnx.Open();
+            OdbcCommand cmd = new OdbcCommand(sql, cnx);
+            cmd.CommandType = CommandType.StoredProcedure;
+            /*Parametros de Entrada*/
+            cmd.Parameters.Add( new OdbcParameter("@AliasUsuario",AliasUsuario));
+            cmd.Parameters.Add(new OdbcParameter("@Contraseña", Contraseña));
+            /*Parametros de Salida*/
+            OdbcParameter pLogeado = new OdbcParameter("@logeado",0);/*EN ESTE PUNTO ME SALE ERROR (Excepción no controlada del tipo 'System.ArgumentOutOfRangeException' en System.Data.dll*/
+Información adicional: El valor de enumeración de OdbcType, 0, no es válido.
+            pLogeado.Direction = ParameterDirection.Output;
+            cmd.Parameters.Add(pLogeado);
+            OdbcParameter pMensaje = new OdbcParameter("@mensaje",OdbcType.VarChar);
+            pMensaje.Direction = ParameterDirection.Output;
+            pMensaje.Size = 40;
+            cmd.Parameters.Add(pMensaje);
+            cmd.ExecuteNonQuery();
+            cnx.Close();
+            //Obteniendo el valor de parametro de salida para verificar si el usuario esta registrado
+            logeado = Int32.Parse(cmd.Parameters["@logeado"].Value.ToString());
+
+            if (logeado > 0)
+            {
+                mensaje = cmd.Parameters["@mensaje"].Value.ToString();
+                return mensaje;
+            }
+            else
+            {
+                return mensaje;
+            }
+
+        }
+
+
+
+
+
+Tom: C
+Intro:  D  A  G  A
+
+D                    A              G                A
+  Look into my eyes,   you will see what you mean to me
+               D                    A
+  Search your heart,   search your soul and when you
+   G                     D         A
+  Find me there, you'll search no more
+       Em                      D A  Em
+  Don't tell me it's not worth trying for
+             Em                     D A   Em
+  You can't tell me it's not worth dying for
+                 D                 A             D
+  You know it's true, everything I  do, I do it for you
+
+D                      A                         G                D   A
+  Look into your heart,  you will find, there's nothing there to hide
+              D             A           G                      D    A
+  Take me as I am, take my life, I would give it all, I would sacrifice
+         Em                     D   A   Em
+  Don't tell me it's not worth fighting for
+           Em                      D  A    Em
+  I can't help it, there's nothing I want more
+                 D                A             D
+  You know it's true, everything I do, I do it for you
+
+Mudança de Tom: C
+
+           C            F                C                G
+   There's no love like your love, and no other could give more love
+
+Mudança de Tom: D
+
+           D                A                    E              A
+   There's no where unless you're there, all the time, all the way
+
+Solo: G  D  G  D
+
+
+E|--------------|----------------------------------------------------------------------------9---------------------|
+B|--------------|------------------------------------------------------9-9---------9/11---11----11/9-------------|
+G|-8-10---------|--8/10~\---/10-8/6-3/6-/8-------6-6----8/10-----10/8/6------------------------------8/10---8b-8b-8b-6---|
+D|------8-11----|----------------------------------6/8--------------------------------------------------------------| 
+A|--------------|---------------------------------------------------------------------------------------------------|
+E|--------------|---------------------------------------------------------------------------------------------------|
+
+
+                 Em                     D A   Em
+   Oh you can't tell me it's not worth trying for
+            Em                     D  A    Em
+   I can't help it there's nothing I want more
+                D                  A
+   Yeah I would fight for you, I'd lie for you, walk the
+    G                     Gm
+   Wire for you, yeah I'd die for you
+                 D                 A    G  Gm           D
+   You know it's true, everything I do, oh,  I do it for you

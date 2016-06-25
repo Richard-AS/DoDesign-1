@@ -1,0 +1,14 @@
+C:\Users\DenierFH\Desktop\USB3.0\rak\BigStore15-06-16\BigStor\BigStor.DoDesingWS\bin\BigStor.DoDesingWS.dll
+C:\Users\DenierFH\Desktop\USB3.0\rak\BigStore15-06-16\BigStor\BigStor.DoDesingWS\bin\BigStor.DoDesingWS.pdb
+C:\Users\DenierFH\Desktop\USB3.0\rak\BigStore15-06-16\BigStor\BigStor.DoDesingWS\obj\Debug\BigStor.DoDesingWS.csprojResolveAssemblyReference.cache
+C:\Users\DenierFH\Desktop\USB3.0\rak\BigStore15-06-16\BigStor\BigStor.DoDesingWS\obj\Debug\BigStor.DoDesingWS.dll
+C:\Users\DenierFH\Desktop\USB3.0\rak\BigStore15-06-16\BigStor\BigStor.DoDesingWS\obj\Debug\BigStor.DoDesingWS.pdb
+C:\BigStore17-06-16\BigStor\BigStor.DoDesingWS\bin\BigStor.DoDesingWS.dll.config
+C:\BigStore17-06-16\BigStor\BigStor.DoDesingWS\bin\BigStor.DoDesingWS.dll
+C:\BigStore17-06-16\BigStor\BigStor.DoDesingWS\bin\BigStor.DoDesingWS.pdb
+C:\BigStore17-06-16\BigStor\BigStor.DoDesingWS\obj\Debug\BigStor.DoDesingWS.dll
+C:\BigStore17-06-16\BigStor\BigStor.DoDesingWS\obj\Debug\BigStor.DoDesingWS.pdb
+C:\BigStore17-06-16\BigStor\BigStor.DoDesingWS\obj\Debug\BigStor.DoDesingWS.csprojResolveAssemblyReference.cache
+C:\BigStore20-06-16\BigStor\BigStor.DoDesingWS\obj\Debug\BigStor.DoDesingWS.csprojResolveAssemblyReference.cache
+C:\BigStore20-06-16\BigStor\BigStor.DoDesingWS\obj\Debug\BigStor.DoDesingWS.dll
+C:\BigStoreNH22-06-16\BigStor\BigStor.DoDesingWS\obj\Debug\BigStor.DoDesingWS.csprojResolveAssemblyReference.cache

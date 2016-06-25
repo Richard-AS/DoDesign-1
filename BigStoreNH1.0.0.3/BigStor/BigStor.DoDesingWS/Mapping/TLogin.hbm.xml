@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="BigStore.DoDesignWS"
+                   namespace="BigStore.DoDesignWS.Model"
+                   default-lazy="false">
+  <class name="TLogin" table="TLogin">
+    <id name="IdTLogin" access="property" column="IdTLogin">
+      <generator class="native" />
+    </id>
+    <property name="NombreUsuario" column="NombreUsuario" />
+    <property name="Email" column="Email" />
+    <property name="Contrasenia" column="Contrasenia" />
+  </class>
+</hibernate-mapping>
+

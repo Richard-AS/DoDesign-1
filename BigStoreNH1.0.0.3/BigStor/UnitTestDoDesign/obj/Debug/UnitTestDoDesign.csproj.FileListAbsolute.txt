@@ -1,0 +1,12 @@
+C:\BigStore17-06-16\BigStor\UnitTestDoDesign\bin\Debug\UnitTestDoDesign.dll.config
+C:\BigStore17-06-16\BigStor\UnitTestDoDesign\bin\Debug\UnitTestDoDesign.dll
+C:\BigStore17-06-16\BigStor\UnitTestDoDesign\bin\Debug\UnitTestDoDesign.pdb
+C:\BigStore17-06-16\BigStor\UnitTestDoDesign\obj\Debug\UnitTestDoDesign.csprojResolveAssemblyReference.cache
+C:\BigStore17-06-16\BigStor\UnitTestDoDesign\obj\Debug\UnitTestDoDesign.dll
+C:\BigStore17-06-16\BigStor\UnitTestDoDesign\obj\Debug\UnitTestDoDesign.pdb
+C:\BigStoreNH1.0.0.0\BigStor\UnitTestDoDesign\bin\Debug\UnitTestDoDesign.dll.config
+C:\BigStoreNH1.0.0.0\BigStor\UnitTestDoDesign\bin\Debug\UnitTestDoDesign.dll
+C:\BigStoreNH1.0.0.0\BigStor\UnitTestDoDesign\bin\Debug\UnitTestDoDesign.pdb
+C:\BigStoreNH1.0.0.0\BigStor\UnitTestDoDesign\obj\Debug\UnitTestDoDesign.csprojResolveAssemblyReference.cache
+C:\BigStoreNH1.0.0.0\BigStor\UnitTestDoDesign\obj\Debug\UnitTestDoDesign.dll
+C:\BigStoreNH1.0.0.0\BigStor\UnitTestDoDesign\obj\Debug\UnitTestDoDesign.pdb
