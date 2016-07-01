@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TLogin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Contrasenia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdTLogin" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreUsuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TLogin" nillable="true" type="tns:TLogin" />
+  <xs:complexType name="Pedido">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cliente" nillable="true" type="tns:Cliente" />
+      <xs:element minOccurs="0" name="IdPedido" type="xs:int" />
+      <xs:element minOccurs="0" name="NroTargeta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pago" nillable="true" type="tns:Pago" />
+      <xs:element minOccurs="0" name="Polo" nillable="true" type="tns:Polo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pedido" nillable="true" type="tns:Pedido" />
+  <xs:complexType name="Cliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Apellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DNI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaNacimiento" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCliente" type="xs:int" />
+      <xs:element minOccurs="0" name="IdTLogin" nillable="true" type="tns:TLogin" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreUsuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NroTargeta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cliente" nillable="true" type="tns:Cliente" />
+  <xs:complexType name="Pago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdPago" type="xs:int" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Pago" nillable="true" type="tns:Pago" />
+  <xs:complexType name="Polo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Color" nillable="true" type="tns:Color" />
+      <xs:element minOccurs="0" name="Design" nillable="true" type="tns:Design" />
+      <xs:element minOccurs="0" name="IdPolo" type="xs:int" />
+      <xs:element minOccurs="0" name="Precio" type="xs:double" />
+      <xs:element minOccurs="0" name="Talla" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Polo" nillable="true" type="tns:Polo" />
+  <xs:complexType name="Color">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IdColor" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Color" nillable="true" type="tns:Color" />
+  <xs:complexType name="Design">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdDesign" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Design" nillable="true" type="tns:Design" />
+  <xs:complexType name="ArrayOfPedido">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pedido" nillable="true" type="tns:Pedido" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPedido" nillable="true" type="tns:ArrayOfPedido" />
+  <xs:complexType name="ArrayOfCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cliente" nillable="true" type="tns:Cliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCliente" nillable="true" type="tns:ArrayOfCliente" />
+  <xs:complexType name="ArrayOfColor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Color" nillable="true" type="tns:Color" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfColor" nillable="true" type="tns:ArrayOfColor" />
+  <xs:complexType name="ArrayOfDesign">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Design" nillable="true" type="tns:Design" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDesign" nillable="true" type="tns:ArrayOfDesign" />
+  <xs:complexType name="DetallePedido">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="Costo" type="xs:double" />
+      <xs:element minOccurs="0" name="IdDetallePedido" type="xs:int" />
+      <xs:element minOccurs="0" name="Pedido" nillable="true" type="tns:Pedido" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DetallePedido" nillable="true" type="tns:DetallePedido" />
+  <xs:complexType name="ArrayOfDetallePedido">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DetallePedido" nillable="true" type="tns:DetallePedido" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDetallePedido" nillable="true" type="tns:ArrayOfDetallePedido" />
+  <xs:complexType name="ArrayOfPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Pago" nillable="true" type="tns:Pago" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPago" nillable="true" type="tns:ArrayOfPago" />
+  <xs:complexType name="ArrayOfPolo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Polo" nillable="true" type="tns:Polo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPolo" nillable="true" type="tns:ArrayOfPolo" />
+  <xs:complexType name="ArrayOfTLogin">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TLogin" nillable="true" type="tns:TLogin" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTLogin" nillable="true" type="tns:ArrayOfTLogin" />
+</xs:schema>

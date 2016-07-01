@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="DoDesign.Service"
+                   namespace="DoDesign.Service.Dominio"
+                   default-lazy="false">
+  <class name="Cliente" table="Cliente">
+    <id name="IdCliente" access="property" column="IdCliente">
+      <generator class="native" />
+    </id>
+    <many-to-one name="IdTLogin" column="IdTLogin"/>
+    <property name="NombreUsuario" column="NombreUsuario"/>
+    <property name="Email" column="Email"/>
+    <property name="Nombre" column="Nombre" />
+    <property name="Apellido" column="Apellido" />
+    <property name="Telefono" column="Telefono" />
+    <property name="Direccion" column="Direccion" />
+    <property name="FechaNacimiento" column="FechaNacimiento" />
+    <property name="DNI" column="DNI" />
+    <property name="NroTarjeta" column="NroTarjeta" />
+  </class>
+</hibernate-mapping>

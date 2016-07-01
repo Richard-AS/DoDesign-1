@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Transaccion" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:1378/Transaccion.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:1378/Transaccion.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:1378/Transaccion.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITransaccion_LoginCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginCliente" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_LoginCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPedido" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPedido" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPedido" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPedido" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearCliente" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCliente" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarCliente" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCliente" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearColor_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearColor" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearColor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearColorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarColor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarColor" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarColor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarColorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarColor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarColor" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarColor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarColorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerColor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerColor" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerColor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerColorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearDesign_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearDesign" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearDesign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearDesignResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarDesign_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDesign" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarDesign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDesignResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarDesign_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarDesign" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarDesign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarDesignResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerDesign_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDesign" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerDesign_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDesignResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearDetallePedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearDetallePedido" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearDetallePedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearDetallePedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarDetallePedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDetallePedido" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarDetallePedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarDetallePedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarDetallePedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarDetallePedido" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarDetallePedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarDetallePedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerDetallePedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDetallePedido" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerDetallePedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDetallePedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPago" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPago" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPago" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerPago_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPago" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerPago_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearPolo_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPolo" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearPolo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPoloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarPolo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPolo" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarPolo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPoloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarPolo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPolo" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarPolo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPoloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerPolo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPolo" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerPolo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPoloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearTLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearTLogin" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_CrearTLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearTLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarTLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarTLogin" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ListarTLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarTLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarTlogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarTlogin" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ModificarTlogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarTloginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerTLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerTLogin" />
+  </wsdl:message>
+  <wsdl:message name="ITransaccion_ObtenerTLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerTLoginResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITransaccion">
+    <wsdl:operation name="LoginCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/LoginCliente" message="tns:ITransaccion_LoginCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/LoginClienteResponse" message="tns:ITransaccion_LoginCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/CrearPedido" message="tns:ITransaccion_CrearPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/CrearPedidoResponse" message="tns:ITransaccion_CrearPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ListarPedido" message="tns:ITransaccion_ListarPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ListarPedidoResponse" message="tns:ITransaccion_ListarPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ModificarPedido" message="tns:ITransaccion_ModificarPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ModificarPedidoResponse" message="tns:ITransaccion_ModificarPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ObtenerPedido" message="tns:ITransaccion_ObtenerPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ObtenerPedidoResponse" message="tns:ITransaccion_ObtenerPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/CrearCliente" message="tns:ITransaccion_CrearCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/CrearClienteResponse" message="tns:ITransaccion_CrearCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ListarCliente" message="tns:ITransaccion_ListarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ListarClienteResponse" message="tns:ITransaccion_ListarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ModificarCliente" message="tns:ITransaccion_ModificarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ModificarClienteResponse" message="tns:ITransaccion_ModificarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ObtenerCliente" message="tns:ITransaccion_ObtenerCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ObtenerClienteResponse" message="tns:ITransaccion_ObtenerCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearColor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/CrearColor" message="tns:ITransaccion_CrearColor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/CrearColorResponse" message="tns:ITransaccion_CrearColor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarColor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ListarColor" message="tns:ITransaccion_ListarColor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ListarColorResponse" message="tns:ITransaccion_ListarColor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarColor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ModificarColor" message="tns:ITransaccion_ModificarColor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ModificarColorResponse" message="tns:ITransaccion_ModificarColor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerColor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ObtenerColor" message="tns:ITransaccion_ObtenerColor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ObtenerColorResponse" message="tns:ITransaccion_ObtenerColor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearDesign">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/CrearDesign" message="tns:ITransaccion_CrearDesign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/CrearDesignResponse" message="tns:ITransaccion_CrearDesign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarDesign">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ListarDesign" message="tns:ITransaccion_ListarDesign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ListarDesignResponse" message="tns:ITransaccion_ListarDesign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarDesign">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ModificarDesign" message="tns:ITransaccion_ModificarDesign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ModificarDesignResponse" message="tns:ITransaccion_ModificarDesign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDesign">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ObtenerDesign" message="tns:ITransaccion_ObtenerDesign_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ObtenerDesignResponse" message="tns:ITransaccion_ObtenerDesign_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearDetallePedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/CrearDetallePedido" message="tns:ITransaccion_CrearDetallePedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/CrearDetallePedidoResponse" message="tns:ITransaccion_CrearDetallePedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarDetallePedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ListarDetallePedido" message="tns:ITransaccion_ListarDetallePedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ListarDetallePedidoResponse" message="tns:ITransaccion_ListarDetallePedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarDetallePedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ModificarDetallePedido" message="tns:ITransaccion_ModificarDetallePedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ModificarDetallePedidoResponse" message="tns:ITransaccion_ModificarDetallePedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDetallePedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ObtenerDetallePedido" message="tns:ITransaccion_ObtenerDetallePedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ObtenerDetallePedidoResponse" message="tns:ITransaccion_ObtenerDetallePedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/CrearPago" message="tns:ITransaccion_CrearPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/CrearPagoResponse" message="tns:ITransaccion_CrearPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ListarPago" message="tns:ITransaccion_ListarPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ListarPagoResponse" message="tns:ITransaccion_ListarPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ModificarPago" message="tns:ITransaccion_ModificarPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ModificarPagoResponse" message="tns:ITransaccion_ModificarPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPago">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ObtenerPago" message="tns:ITransaccion_ObtenerPago_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ObtenerPagoResponse" message="tns:ITransaccion_ObtenerPago_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearPolo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/CrearPolo" message="tns:ITransaccion_CrearPolo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/CrearPoloResponse" message="tns:ITransaccion_CrearPolo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPolo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ListarPolo" message="tns:ITransaccion_ListarPolo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ListarPoloResponse" message="tns:ITransaccion_ListarPolo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPolo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ModificarPolo" message="tns:ITransaccion_ModificarPolo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ModificarPoloResponse" message="tns:ITransaccion_ModificarPolo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPolo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ObtenerPolo" message="tns:ITransaccion_ObtenerPolo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ObtenerPoloResponse" message="tns:ITransaccion_ObtenerPolo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearTLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/CrearTLogin" message="tns:ITransaccion_CrearTLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/CrearTLoginResponse" message="tns:ITransaccion_CrearTLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarTLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ListarTLogin" message="tns:ITransaccion_ListarTLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ListarTLoginResponse" message="tns:ITransaccion_ListarTLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarTlogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ModificarTlogin" message="tns:ITransaccion_ModificarTlogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ModificarTloginResponse" message="tns:ITransaccion_ModificarTlogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerTLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransaccion/ObtenerTLogin" message="tns:ITransaccion_ObtenerTLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransaccion/ObtenerTLoginResponse" message="tns:ITransaccion_ObtenerTLogin_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITransaccion" type="tns:ITransaccion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LoginCliente">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/LoginCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearPedido">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/CrearPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPedido">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ListarPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPedido">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ModificarPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPedido">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ObtenerPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearCliente">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/CrearCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCliente">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ListarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarCliente">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ModificarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCliente">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ObtenerCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearColor">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/CrearColor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarColor">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ListarColor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarColor">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ModificarColor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerColor">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ObtenerColor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearDesign">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/CrearDesign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarDesign">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ListarDesign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarDesign">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ModificarDesign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDesign">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ObtenerDesign" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearDetallePedido">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/CrearDetallePedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarDetallePedido">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ListarDetallePedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarDetallePedido">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ModificarDetallePedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDetallePedido">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ObtenerDetallePedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearPago">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/CrearPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPago">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ListarPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPago">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ModificarPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPago">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ObtenerPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearPolo">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/CrearPolo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPolo">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ListarPolo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPolo">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ModificarPolo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPolo">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ObtenerPolo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearTLogin">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/CrearTLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarTLogin">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ListarTLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarTlogin">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ModificarTlogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerTLogin">
+      <soap:operation soapAction="http://tempuri.org/ITransaccion/ObtenerTLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Transaccion">
+    <wsdl:port name="BasicHttpBinding_ITransaccion" binding="tns:BasicHttpBinding_ITransaccion">
+      <soap:address location="http://localhost:1378/Transaccion.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="DoDesign.Service"
+                   namespace="DoDesign.Service.Dominio"
+                   default-lazy="false">
+  <class name="DetallePedido" table="DetallePedido">
+    <id name="IdDetallePedido" access="property" column="IdDetallePedido">
+      <generator class="native" />
+    </id>
+    <many-to-one name="IdPedido" column="IdPedido"/>
+    <property name="Cantidad" column="Cantidad" />
+    <property name="Costo" column="Costo" />
+  </class>
+</hibernate-mapping>
+

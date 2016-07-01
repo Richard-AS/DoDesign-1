@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1378/Transaccion.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" />
+  <xs:element name="LoginCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="logueo" nillable="true" type="q1:TLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoginClienteResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearPedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="pedido" nillable="true" type="q2:Pedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearPedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="CrearPedidoResult" nillable="true" type="q3:Pedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPedido">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ListarPedidoResult" nillable="true" type="q4:ArrayOfPedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="pedido" nillable="true" type="q5:Pedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ModificarPedidoResult" nillable="true" type="q6:Pedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdPedido" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ObtenerPedidoResult" nillable="true" type="q7:Pedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="cliente" nillable="true" type="q8:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="CrearClienteResult" nillable="true" type="q9:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarCliente">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ListarClienteResult" nillable="true" type="q10:ArrayOfCliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="cliente" nillable="true" type="q11:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ModificarClienteResult" nillable="true" type="q12:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerCliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdCliente" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerClienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ObtenerClienteResult" nillable="true" type="q13:Cliente" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearColor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="color" nillable="true" type="q14:Color" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearColorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="CrearColorResult" nillable="true" type="q15:Color" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarColor">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarColorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ListarColorResult" nillable="true" type="q16:ArrayOfColor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarColor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="color" nillable="true" type="q17:Color" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarColorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ModificarColorResult" nillable="true" type="q18:Color" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerColor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdColor" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerColorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ObtenerColorResult" nillable="true" type="q19:Color" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearDesign">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="design" nillable="true" type="q20:Design" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearDesignResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="CrearDesignResult" nillable="true" type="q21:Design" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDesign">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDesignResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ListarDesignResult" nillable="true" type="q22:ArrayOfDesign" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarDesign">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="design" nillable="true" type="q23:Design" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarDesignResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ModificarDesignResult" nillable="true" type="q24:Design" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDesign">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdDesign" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDesignResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ObtenerDesignResult" nillable="true" type="q25:Design" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearDetallePedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="detallePedido" nillable="true" type="q26:DetallePedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearDetallePedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="CrearDetallePedidoResult" nillable="true" type="q27:DetallePedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDetallePedido">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarDetallePedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ListarDetallePedidoResult" nillable="true" type="q28:ArrayOfDetallePedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarDetallePedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="detallePedido" nillable="true" type="q29:DetallePedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarDetallePedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ModificarDetallePedidoResult" nillable="true" type="q30:DetallePedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDetallePedido">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdDetallePedido" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDetallePedidoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ObtenerDetallePedidoResult" nillable="true" type="q31:DetallePedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearPago">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="pago" nillable="true" type="q32:Pago" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="CrearPagoResult" nillable="true" type="q33:Pago" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPago">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ListarPagoResult" nillable="true" type="q34:ArrayOfPago" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPago">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="pago" nillable="true" type="q35:Pago" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ModificarPagoResult" nillable="true" type="q36:Pago" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPago">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdPago" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPagoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ObtenerPagoResult" nillable="true" type="q37:Pago" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearPolo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="polo" nillable="true" type="q38:Polo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearPoloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="CrearPoloResult" nillable="true" type="q39:Polo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPolo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarPoloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ListarPoloResult" nillable="true" type="q40:ArrayOfPolo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPolo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="polo" nillable="true" type="q41:Polo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarPoloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ModificarPoloResult" nillable="true" type="q42:Polo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPolo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdPolo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPoloResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ObtenerPoloResult" nillable="true" type="q43:Polo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearTLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="tlogin" nillable="true" type="q44:TLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CrearTLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="CrearTLoginResult" nillable="true" type="q45:TLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarTLogin">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarTLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ListarTLoginResult" nillable="true" type="q46:ArrayOfTLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarTlogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="tlogin" nillable="true" type="q47:TLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModificarTloginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ModificarTloginResult" nillable="true" type="q48:TLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerTLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdTLogin" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerTLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/DoDesign.Service.Dominio" minOccurs="0" name="ObtenerTLoginResult" nillable="true" type="q49:TLogin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

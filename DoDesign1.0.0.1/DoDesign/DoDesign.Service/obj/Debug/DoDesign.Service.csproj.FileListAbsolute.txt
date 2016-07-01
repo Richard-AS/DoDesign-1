@@ -1,0 +1,13 @@
+C:\DoDesign\DoDesign.Service\bin\DoDesign.Service.dll.config
+C:\DoDesign\DoDesign.Service\bin\DoDesign.Service.dll
+C:\DoDesign\DoDesign.Service\bin\DoDesign.Service.pdb
+C:\DoDesign\DoDesign.Service\obj\Debug\DoDesign.Service.dll
+C:\DoDesign\DoDesign.Service\obj\Debug\DoDesign.Service.pdb
+C:\DoDesign0.0.1\DoDesign\DoDesign.Service\bin\DoDesign.Service.dll.config
+C:\DoDesign0.0.1\DoDesign\DoDesign.Service\bin\DoDesign.Service.dll
+C:\DoDesign0.0.1\DoDesign\DoDesign.Service\bin\DoDesign.Service.pdb
+C:\DoDesign0.0.1\DoDesign\DoDesign.Service\obj\Debug\DoDesign.Service.dll
+C:\DoDesign0.0.1\DoDesign\DoDesign.Service\obj\Debug\DoDesign.Service.pdb
+C:\DoDesign0.0.1\DoDesign\DoDesign.Service\bin\Iesi.Collections.dll
+C:\DoDesign0.0.1\DoDesign\DoDesign.Service\bin\NHibernate.dll
+C:\DoDesign0.0.1\DoDesign\DoDesign.Service\obj\Debug\DoDesign.Service.csprojResolveAssemblyReference.cache

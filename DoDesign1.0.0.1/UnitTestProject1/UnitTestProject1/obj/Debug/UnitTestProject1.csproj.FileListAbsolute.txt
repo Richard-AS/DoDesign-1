@@ -1,0 +1,12 @@
+C:\UnitTestProject1\UnitTestProject1\bin\Debug\UnitTestProject1.dll.config
+C:\UnitTestProject1\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\UnitTestProject1\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\UnitTestProject1\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\UnitTestProject1\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\UnitTestProject1\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\DoDesign0.0.1\UnitTestProject1\UnitTestProject1\bin\Debug\UnitTestProject1.dll.config
+C:\DoDesign0.0.1\UnitTestProject1\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\DoDesign0.0.1\UnitTestProject1\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\DoDesign0.0.1\UnitTestProject1\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\DoDesign0.0.1\UnitTestProject1\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\DoDesign0.0.1\UnitTestProject1\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

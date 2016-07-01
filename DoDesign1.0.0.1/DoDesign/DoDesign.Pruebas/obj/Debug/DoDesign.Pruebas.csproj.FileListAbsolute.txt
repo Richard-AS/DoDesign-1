@@ -1,0 +1,12 @@
+C:\DoDesign\DoDesign.Pruebas\bin\Debug\DoDesign.Pruebas.dll.config
+C:\DoDesign\DoDesign.Pruebas\bin\Debug\DoDesign.Pruebas.dll
+C:\DoDesign\DoDesign.Pruebas\bin\Debug\DoDesign.Pruebas.pdb
+C:\DoDesign\DoDesign.Pruebas\obj\Debug\DoDesign.Pruebas.csprojResolveAssemblyReference.cache
+C:\DoDesign\DoDesign.Pruebas\obj\Debug\DoDesign.Pruebas.dll
+C:\DoDesign\DoDesign.Pruebas\obj\Debug\DoDesign.Pruebas.pdb
+C:\DoDesign0.0.1\DoDesign\DoDesign.Pruebas\bin\Debug\DoDesign.Pruebas.dll.config
+C:\DoDesign0.0.1\DoDesign\DoDesign.Pruebas\bin\Debug\DoDesign.Pruebas.dll
+C:\DoDesign0.0.1\DoDesign\DoDesign.Pruebas\bin\Debug\DoDesign.Pruebas.pdb
+C:\DoDesign0.0.1\DoDesign\DoDesign.Pruebas\obj\Debug\DoDesign.Pruebas.csprojResolveAssemblyReference.cache
+C:\DoDesign0.0.1\DoDesign\DoDesign.Pruebas\obj\Debug\DoDesign.Pruebas.dll
+C:\DoDesign0.0.1\DoDesign\DoDesign.Pruebas\obj\Debug\DoDesign.Pruebas.pdb

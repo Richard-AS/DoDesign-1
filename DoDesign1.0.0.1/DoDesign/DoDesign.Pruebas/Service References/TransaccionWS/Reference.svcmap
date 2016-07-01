@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3edab7f8-ea6b-4ab6-b332-d3661bf614e7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1378/Transaccion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Transaccion.wsdl" MetadataType="Wsdl" ID="0d00299e-762c-4ae0-b05c-6673a93bdc30" SourceId="1" SourceUrl="http://localhost:1378/Transaccion.svc?wsdl" />
+    <MetadataFile FileName="Transaccion.xsd" MetadataType="Schema" ID="41beacd3-2ffa-4e60-9031-e917c8b051b2" SourceId="1" SourceUrl="http://localhost:1378/Transaccion.svc?xsd=xsd2" />
+    <MetadataFile FileName="Transaccion1.xsd" MetadataType="Schema" ID="d14b24af-e69d-45e8-ba4a-e2a030f4e34a" SourceId="1" SourceUrl="http://localhost:1378/Transaccion.svc?xsd=xsd0" />
+    <MetadataFile FileName="Transaccion.disco" MetadataType="Disco" ID="709b3037-8840-40a9-82d8-8402ac5ccc59" SourceId="1" SourceUrl="http://localhost:1378/Transaccion.svc?disco" />
+    <MetadataFile FileName="Transaccion2.xsd" MetadataType="Schema" ID="e4b46006-9cc0-4073-b3e1-931a0e70c4e6" SourceId="1" SourceUrl="http://localhost:1378/Transaccion.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
