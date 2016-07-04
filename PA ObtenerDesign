@@ -1,0 +1,16 @@
+if OBJECT_ID('uspObtenerDesign','P') is not null
+	drop proc uspObtenerDesign
+go
+create proc uspObtenerDesign
+@IdDesign int
+as
+begin
+	if exists (select IdDesign from Design where IdDesign = @IdDesign)
+		begin
+			select CodError = 0, Mensaje ='', * from Design where IdDesign = @IdDesign
+		end
+	else Select CodError = 0, Mensaje ='Error: Codigo de Producto No Existe'
+end
+go
+
+exec uspObtenerDesign '1'
